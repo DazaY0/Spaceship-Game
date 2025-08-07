@@ -417,13 +417,10 @@ export async function start() {
 
     bullets.length = 0;
     enemies.length = 0;
+    
     player = await Player.create(300, 300);
     console.log(player.ship);
-    const enemyFactory = new EnemyFactory();
-            await  enemyFactory.init();
-            enemies.push(enemyFactory.createBoss());
-    //await nextRound();
-    enemies.push()
+    await nextRound();
     document.getElementById('hp-text').textContent = player.currentHP + "/" + player.maxHP;
     console.log(enemies[0])
     console.log(player.tip);
@@ -575,4 +572,5 @@ export function hitAnimation(amount, currentHP, maxHP) {
 
 
 window.start = start;
+
 window.pause = pause;
