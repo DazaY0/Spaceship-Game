@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/background.css">
+        <link rel="stylesheet" href="/css/game.css   ">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">    
+    </head>
+
+    <body>
+        <canvas id="starfield"></canvas>
+        <nav>
+            <ul>
+                <li><a >Play</a></li>
+                <li><a  href="ships.html">Ships</a></li>
+                <li><a  href="highscores.html">Highscores</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="ui">
+                <p id="hp" class="press-start-2p-regular">
+                    HP: <span id="hp-text">Press Start</span>
+                    <span id="damage-float" style="opacity:0;">-0</span>
+                </p>
+                <p id="messages"></p>
+
+                
+                <p id="score-container">Score: <span id="score">0</span></p>
+                
+
+            </div>
+            
+            <div class="buttonContainer">
+                 <button onclick="start()">Start Game</button>
+
+                <button onClick="pause()">Pause</button>
+            </div>
+           
+            <canvas id="gameCanvas" width="600" height="600" style="border: 2px black;">&lt;canvas>
+        </div>
+        
+            
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/CustomEase.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+            <script src="/js/background.js"></script>
+            <script type="module" src="./js/spaceshit.js"></script>
+
+        
+    </body>
+</html>

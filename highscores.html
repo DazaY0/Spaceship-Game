@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/background.css">
+        <link rel="stylesheet" href="/css/highscore.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">    
+    </head>
+
+    <body>
+         <canvas id="starfield"></canvas>
+        <nav>
+            <ul>
+                <li><a href="spaceshit.html">Play</a></li>
+                <li><a href="ships.html">Ships</a></li>
+                <li><a>Highscores</a></li>
+            </ul>
+        </nav>
+        <div id="registerModalPage" >
+            <div class="modalPage">
+                <p id="error"></p>
+                <p>Typ your Name</p>
+                <input id="registerInput" type="text">
+                <div>
+                    <button onclick="hideModal()">Close</button>
+                    <button onclick="register()">Register</button>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="top-bar">
+                <div id="register-container">
+                <button id="register" onclick="showModal()">Register</button>
+                </div>
+                <p id="logged-in">You are logged in as</p>
+            </div>
+            <div id="highscore-container" >
+                <p>Highscores:</p>
+                <p id="loading-text"> Fetching form server </p>
+                <ul id="highscore-list" class="hidden" type="1"></ul>
+            </div>
+        </div>
+        
+        
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrambleTextPlugin.min.js"></script>
+        <script src="/js/background.js"></script>
+        <script src="/js/highscores.js"></script>
+    </body>
+</html>

@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        
+       <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/background.css">
+        <link rel="stylesheet" href="/css/ships.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">    
+    </head>
+
+    <body>
+        <canvas id="starfield"></canvas>
+        <nav>
+            <ul>
+                <li><a href="spaceshit.html">Play</a></li>
+                <li><a  >Ships</a></li>
+                <li><a  href="highscores.html">Highscores</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="ship">
+                <div  class="carousel-controls">
+                    <button id="prevBtn"><</button>
+                    <p id="name">Name</p>
+                    <button id="nextBtn">></button>
+                </div>
+               
+                <canvas  height="300" width="600" id="canvasShip"></canvas>
+                <div class="stats">
+                    <div id="generel" class="row">
+                        <div class="row-sub">
+                            <p id="hp">HP:</p>
+                            <p id="movementSpeed">Movement Speed:</p>
+                        </div>
+                        
+                    </div>
+                    <div id="bullet" class="row">
+                        <p class="rowTitle">Bullet</p>
+                        <hr>
+                        <div class="row-sub">
+                            <p id="bulletDamage">Bullet Damage</p>
+                            <p id="bulletSpeed">Bulletspeed:</p>
+                            <p id="rpm">RPM:</p>
+                        </div>
+                    </div>
+                    <div id="beam" class="row">
+                        <p class="rowTitle">Beam</p>
+                        <hr>
+                        <div class="row-sub">
+                            <p id="beamDamage">Damage: 15</p>
+                            <p id="beamDuration">Duration:</p>
+                            <p id="beamCooldown">Cooldown:</p>
+                        </div>
+                        
+                    </div>
+                    <div id="aimBullet" class="row">
+                        <p class="rowTitle">Aim Bullets</p>
+                        <hr>
+                        <div class="row-sub">
+                            <p id="aimBulletDamage">Damage:</p>
+                            <p id="aimBulletDuration">Duration:</p>
+                            <p id="aimBulletCooldown">Cooldown:</p>
+                        </div>
+                        
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+        
+
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrambleTextPlugin.min.js"></script>
+        <script src="/js/background.js"></script>
+       <script  src="/js/shipDisplay.js"></script>
+         
+
+
+    </body>
+</html>
