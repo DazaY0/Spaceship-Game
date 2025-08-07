@@ -1,0 +1,54 @@
+
+/* For the +1 floating animation */
+.score-popup {
+  position: absolute;
+  color: #4caf50; /* green */
+  font-weight: bold;
+  font-size: 15px;
+
+   transform: translateY(0);
+  pointer-events: none;
+  z-index: 10;
+   font-family:"Press Start 2P", monospace;
+}
+#score {
+  display: inline-block; /* allows transform to visually apply */
+  transform: translateY(0); /* initialize */
+  transition: transform 0.2s ease-out;
+}
+#messages{
+  display:none;
+}
+.buttonContainer{
+  display:flex;
+  justify-content: space-between;
+
+}
+
+
+.ui{
+    font-family:"Press Start 2P", monospace;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    color: white;
+    margin-bottom: 10px;
+}
+#hp {
+  position: relative;
+  color: white;
+}
+#hp-text {
+  display: inline-block;
+}
+#damage-float {
+  position: absolute;
+  left: 110%;
+  top: 0;
+  opacity: 0;
+  color: red;
+  font-size: 1rem;
+  pointer-events: none;
+}
+

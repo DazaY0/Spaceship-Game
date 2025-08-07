@@ -1,0 +1,89 @@
+.row-sub{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+
+}
+.row{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#name{
+    color:aqua;
+    font-size: 2rem;
+    font-family: "Press Start 2P", monospace;
+    text-align: center;
+}
+
+.carousel-controls{
+    display:flex;
+    justify-content: space-around;
+    gap:1rem;
+
+}
+.ship {
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+}
+
+
+#canvasShip {
+    display: block;
+    margin: 1rem auto;
+}
+.carousel-controls button {
+    font-family: 'Press Start 2P', cursive;
+    padding: 8px 16px;
+    margin: 5px;
+    color: aqua;
+    background-color: transparent !important;
+    border:none;
+    cursor: pointer;
+    transition: transform 0.6s ease;
+}
+
+.carousel-controls button #prevBtn:hover{
+    transform: translateX(-1rem);
+}
+.carousel-controls button #nextBtn:hover{
+    transform: translateX(1rem);
+}
+.rowTitle{
+
+    color:aqua !important;
+    font-size: 1.5rem;
+    white-space: nowrap;
+}
+.row-sub p{
+    color:white;
+    font-family: "Press Start 2P", monospace;
+    white-space: nowrap;
+}
+.row p{
+    color:white;
+    font-family: "Press Start 2P", monospace;
+}
+ hr {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+.stats{
+    display:flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+@media (max-width: 600px) {
+    .row-sub p{
+        font-size: 0.8rem;
+    }
+    .rowTitle{
+        font-size: 1.2rem;
+    }
+  }
