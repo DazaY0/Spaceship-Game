@@ -476,7 +476,7 @@ function render(){
         ctx.font = "36px 'Press Start 2P'";
         ctx.textAlign = "center";
         ctx.class = "press-start-2p-regular"
-        ctx.fillText("Round " + round, canvas.width / 2, canvas.height / 2);
+        ctx.fillText("Pause", canvas.width / 2, canvas.height / 2);
     }
 
 
@@ -575,4 +575,5 @@ export function hitAnimation(amount, currentHP, maxHP) {
 window.start = start;
 
 window.pause = pause;
+
 
