@@ -468,6 +468,7 @@ function render(){
         ctx.fillRect(0, 0, canvas.width, canvas.height);
     }
     if(pauseGame){
+        const opacity = 1;
         ctx.fillStyle = `rgba(0, 0, 0, ${opacity * 0.8})`;
         ctx.fillRect(0, 0, canvas.width, canvas.height);
 
@@ -574,3 +575,4 @@ export function hitAnimation(amount, currentHP, maxHP) {
 window.start = start;
 
 window.pause = pause;
+
